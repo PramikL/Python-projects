@@ -23,7 +23,7 @@ WINNER_FONT = pygame.font.SysFont("comicscans", 100)
 
 FPS = 60
 VEL = 6
-BULLET_VEL = 12
+BULLET_VEL = 15
 MAX_BULLETS = 30
 SPACESHIP_WIDTH, SPACE_HEIGHT = (55, 40)
 
@@ -143,7 +143,7 @@ def draw_winner(text):
         draw_text,
         (
             WIDTH // 2 - draw_text.get_width() // 2,
-            HEIGHT // 2 - draw_text.get_height() // 2,
+            HEIGHT // 1.5 - draw_text.get_height() // 2,
         ),
     )
     pygame.display.update()
